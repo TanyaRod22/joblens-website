@@ -1,24 +1,38 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/joblens/Navbar";
+import { Hero } from "@/components/joblens/Hero";
+import { Marquee } from "@/components/joblens/Marquee";
+import { HowItWorks } from "@/components/joblens/HowItWorks";
+import { Features } from "@/components/joblens/Features";
+import { Demo } from "@/components/joblens/Demo";
+import { Personalization } from "@/components/joblens/Personalization";
+import { Compare } from "@/components/joblens/Compare";
+import { Faq } from "@/components/joblens/Faq";
+import { FinalCta } from "@/components/joblens/FinalCta";
+import { Footer } from "@/components/joblens/Footer";
+import { MobileCta } from "@/components/joblens/MobileCta";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      <Navbar />
+      <main>
+        <Hero />
+        <Marquee />
+        <HowItWorks />
+        <Features />
+        <Demo />
+        <Personalization />
+        <Compare />
+        <Faq />
+        <FinalCta />
+      </main>
+      <Footer />
+      <MobileCta />
     </div>
   );
 }
