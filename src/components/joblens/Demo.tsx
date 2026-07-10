@@ -145,7 +145,7 @@ function AnalysisTab() {
             Why this role
           </div>
           <p className="mt-1.5 text-sm text-slate-700 leading-relaxed">
-            The scope maps directly to what you led at your last two roles — greenfield React/TS
+            The scope maps directly to what you led at your last two roles greenfield React/TS
             work with real ownership over infrastructure decisions.
           </p>
         </div>
@@ -227,7 +227,7 @@ function OutreachTab({ copy, copied }: { copy: (t: string) => void; copied: bool
 
 I came across the Senior Software Engineer role at Acme and it looks like an unusually strong fit for what I've been building over the last few years.
 
-At Northwind I led the migration of our billing service to TypeScript on AWS, shaving 40% off p95 latency — the exact tradeoffs your posting hints at. I'd love 15 minutes to hear how the platform team is thinking about the next phase.
+At Northwind I led the migration of our billing service to TypeScript on AWS, shaving 40% off p95 latency, the exact tradeoffs your posting hints at. I'd love 15 minutes to hear how the platform team is thinking about the next phase.
 
 Would next Tuesday or Wednesday work?
 
@@ -298,7 +298,7 @@ function ResumeTab() {
         </div>
         <p className="mt-2 text-sm text-slate-700 leading-relaxed">
           Anchored in quantifiable outcomes, name-drops the exact stack in the JD, and signals
-          ownership — three patterns Acme's engineering hiring bar looks for.
+          ownership, three patterns Acme's engineering hiring bar looks for.
         </p>
       </div>
     </div>

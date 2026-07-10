@@ -16,7 +16,7 @@ export function Personalization() {
           </h2>
           <p className="mt-5 text-slate-600 leading-relaxed">
             Joblens keeps your background handy so every fit score, talking point, and draft is
-            grounded in your actual experience — not a generic template.
+            grounded in your actual experience, not a generic template.
           </p>
           <ul className="mt-6 space-y-2 text-sm text-slate-700">
             <li className="flex gap-2">

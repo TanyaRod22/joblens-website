@@ -13,14 +13,11 @@ export function Footer() {
           <span className="text-sm text-slate-400 ml-2">© 2026</span>
         </div>
         <div className="flex items-center gap-6 text-sm text-slate-500">
-          <Link to="/privacy" className="hover:text-slate-900 transition-colors">
+          <a href="https://app.notion.com/p/Joblens-Privacy-Policy-e987d8e103c683db97ee818a076afa39?source=copy_link" className="hover:text-slate-900 transition-colors">
             Privacy Policy
-          </Link>
-          <a href="mailto:hello@joblens.app" className="hover:text-slate-900 transition-colors">
-            Contact
           </a>
-          <a href="https://github.com" className="hover:text-slate-900 transition-colors">
-            GitHub
+          <a href="mailto:tanyarodrigues067@gmail.com" className="hover:text-slate-900 transition-colors">
+            Contact
           </a>
         </div>
       </div>

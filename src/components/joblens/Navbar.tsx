@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Search, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import joblensLogo from "../../../assets/Joblens.png";
 
 const links = [
   { href: "#features", label: "Features" },
@@ -27,9 +28,7 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 group">
-          <div className="h-8 w-8 rounded-lg bg-primary grid place-items-center shadow-lift">
-            <Search className="h-4 w-4 text-white" strokeWidth={2.75} />
-          </div>
+          <img src={joblensLogo} alt="Joblens Logo" className="h-10 w-10" />
           <span className="text-lg font-bold tracking-tight text-slate-900">Joblens</span>
         </a>
 

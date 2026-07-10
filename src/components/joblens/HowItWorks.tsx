@@ -15,7 +15,7 @@ const steps = [
   {
     icon: Rocket,
     title: "Get interview-ready",
-    desc: "Fit score, talking points, resume tips, and outreach drafts — in seconds.",
+    desc: "Fit score, talking points, resume tips, and outreach drafts in seconds.",
   },
 ];
 
