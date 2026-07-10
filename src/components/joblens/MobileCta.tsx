@@ -22,7 +22,7 @@ export function MobileCta() {
           className="md:hidden fixed bottom-0 inset-x-0 z-40 p-3 bg-white/90 backdrop-blur border-t border-slate-200"
         >
           <a
-            href="#"
+            href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm" target="_blank" rel="noopener noreferrer"
             className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-primary hover:bg-primary-hover text-white font-medium py-3 shadow-lift"
           >
             <Chrome className="h-5 w-5" />

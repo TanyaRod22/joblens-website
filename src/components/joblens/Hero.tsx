@@ -67,7 +67,7 @@ export function Hero() {
             className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3"
           >
             <a
-              href="#"
+              href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm" target="_blank" rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-xl bg-primary hover:bg-primary-hover text-white font-medium px-5 py-3 shadow-lift transition-all hover:scale-[1.02] animate-soft-pulse"
             >
               <Chrome className="h-5 w-5" />

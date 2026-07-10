@@ -51,7 +51,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href="#"
+            href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm" target="_blank" rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 rounded-lg bg-primary hover:bg-primary-hover text-white text-sm font-medium px-4 py-2 transition-all shadow-lift hover:scale-[1.02]"
           >
             Add to Chrome
@@ -80,7 +80,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="#"
+              href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm" target="_blank" rel="noopener noreferrer"
               className="sm:hidden mt-2 rounded-lg bg-primary text-white text-sm font-medium px-4 py-2.5 text-center"
             >
               Add to Chrome

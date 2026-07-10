@@ -17,7 +17,7 @@ export function FinalCta() {
             </p>
             <div className="relative mt-8 flex justify-center">
               <a
-                href="#"
+                href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-white text-primary font-semibold px-6 py-3.5 shadow-lift hover:scale-[1.03] transition-transform"
               >
                 <Chrome className="h-5 w-5" />
