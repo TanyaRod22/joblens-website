@@ -45,9 +45,9 @@ export function Hero() {
             transition={{ duration: 0.55, delay: 0.05 }}
             className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.05]"
           >
-            Interview prep,{" "}
+            Joblens,{" "}
             <span className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
-              built into every job posting
+              built to improve how you apply to jobs.
             </span>
           </motion.h1>
 

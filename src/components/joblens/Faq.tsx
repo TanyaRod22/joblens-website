@@ -31,7 +31,7 @@ const faqs = [
 ];
 
 export function Faq() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
   return (
     <section id="faq" className="py-24 bg-surface">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">

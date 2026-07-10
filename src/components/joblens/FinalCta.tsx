@@ -10,10 +10,10 @@ export function FinalCta() {
             <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-white/10 blur-3xl" />
             <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-white/10 blur-3xl" />
             <h2 className="relative text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-              Your next interview starts here
+              Your next job application starts here
             </h2>
             <p className="relative mt-4 text-blue-100 max-w-lg mx-auto">
-              Install Joblens and get interview-ready on the next job posting you open.
+              Install Joblens and get ready to apply to with a personalized application.
             </p>
             <div className="relative mt-8 flex justify-center">
               <a

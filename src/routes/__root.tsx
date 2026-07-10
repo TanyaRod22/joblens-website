@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import joblensLogo from "../../assets/Joblens.png";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -77,26 +78,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Joblens — AI Interview Prep for Every Job Posting" },
+      { title: "Joblens — Chrome Extension for better job applications" },
       {
         name: "description",
         content:
-          "Scan any role on LinkedIn, Greenhouse, and more. Get fit scores, talking points, and outreach drafts — personalized to your resume.",
+          "Browser extension that scans job postings on LinkedIn, Greenhouse, Lever, Workday, Ashby, and other careers pages, then uses OpenAI to generate interview prep: role requirements, technical skills, why this role/company, cold email talking points, and questions to ask.",
       },
-      { property: "og:title", content: "Joblens — AI Interview Prep for Every Job Posting" },
+      { property: "og:title", content: "Joblens — Chrome Extension for AI Interview Prep" },
       {
         property: "og:description",
         content:
-          "A free Chrome extension that turns any job posting into personalized interview prep in seconds.",
+          "Browser extension that scans job postings on LinkedIn, Greenhouse, Lever, Workday, Ashby, and other careers pages, then uses OpenAI to generate interview prep: role requirements, technical skills, why this role/company, cold email talking points, and questions to ask.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Joblens" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Joblens — AI Interview Prep for Every Job Posting" },
+      { name: "twitter:title", content: "Joblens — Chrome Extension for AI Interview Prep" },
       {
         name: "twitter:description",
         content:
-          "Scan any role on LinkedIn, Greenhouse, and more. Get fit scores, talking points, and outreach drafts.",
+          "Browser extension that scans job postings on LinkedIn, Greenhouse, Lever, Workday, Ashby, and other careers pages, then uses OpenAI to generate interview prep: role requirements, technical skills, why this role/company, cold email talking points, and questions to ask.",
       },
     ],
     links: [
@@ -107,7 +108,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: joblensLogo, type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
