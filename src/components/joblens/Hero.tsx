@@ -160,12 +160,12 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Floating extension panel: stacked below on mobile, floating on lg+ */}
+          {/* Floating extension panel: stacked on mobile, floats over listing from md+ */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 mx-auto max-w-[360px] lg:mt-0 lg:mx-0 lg:max-w-none lg:absolute lg:-right-6 xl:-right-10 lg:top-8 lg:w-[320px] lg:animate-float-panel"
+            className="mt-6 mx-auto max-w-[320px] sm:max-w-[340px] md:mt-0 md:mx-0 md:max-w-none md:absolute md:-right-2 md:top-2 md:w-[260px] lg:-right-6 xl:-right-10 lg:top-4 lg:w-[300px] md:animate-float-panel"
           >
             <ExtensionPanel />
           </motion.div>
