@@ -64,7 +64,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.25 }}
-            className="mt-8 flex flex-wrap gap-3"
+            className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3"
           >
             <a
               href="#"
