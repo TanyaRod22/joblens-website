@@ -102,19 +102,19 @@ export function Hero() {
           <div className="rounded-2xl bg-white shadow-panel ring-1 ring-slate-200 overflow-hidden">
             {/* Browser chrome */}
             <div className="flex items-center gap-2 px-3 py-2.5 border-b border-slate-100 bg-slate-50">
-              <div className="flex gap-1.5">
+              <div className="flex gap-1.5 shrink-0">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
                 <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
               </div>
-              <div className="ml-3 flex-1 h-6 rounded-md bg-white border border-slate-200 text-[11px] text-slate-500 px-2 flex items-center gap-1.5">
-                <span className="text-slate-400">linkedin.com/jobs/</span>
-                <span className="text-slate-700">senior-engineer-acme</span>
+              <div className="ml-3 flex-1 min-w-0 h-6 rounded-md bg-white border border-slate-200 text-[11px] text-slate-500 px-2 flex items-center gap-1.5 overflow-hidden">
+                <span className="text-slate-400 hidden xs:inline">linkedin.com/jobs/</span>
+                <span className="text-slate-700 truncate">senior-engineer-acme</span>
               </div>
             </div>
 
             {/* Fake LinkedIn job page */}
-            <div className="p-5 pr-3">
+            <div className="p-5 sm:pr-3">
               <div className="flex items-start gap-3">
                 <div className="h-10 w-10 rounded-lg bg-slate-900 text-white grid place-items-center font-bold text-sm shrink-0">
                   A
@@ -134,7 +134,7 @@ export function Hero() {
                   <div className="text-xs text-slate-500 mt-0.5">
                     Remote · Full-time · Posted 2 days ago
                   </div>
-                  <div className="mt-3 flex gap-2">
+                  <div className="mt-3 flex flex-wrap gap-2">
                     <span className="text-[11px] font-medium bg-blue-50 text-primary rounded-md px-2 py-0.5">
                       Easy Apply
                     </span>
@@ -160,12 +160,12 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Floating extension panel */}
+          {/* Floating extension panel: stacked below on mobile, floating on lg+ */}
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute -right-2 sm:-right-6 lg:-right-10 top-8 w-[280px] sm:w-[320px] animate-float-panel"
+            className="mt-6 mx-auto max-w-[360px] lg:mt-0 lg:mx-0 lg:max-w-none lg:absolute lg:-right-6 xl:-right-10 lg:top-8 lg:w-[320px] lg:animate-float-panel"
           >
             <ExtensionPanel />
           </motion.div>
@@ -174,3 +174,4 @@ export function Hero() {
     </section>
   );
 }
+
