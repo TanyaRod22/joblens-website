@@ -49,9 +49,7 @@ export function Demo() {
                     key={t.id}
                     onClick={() => setActive(t.id)}
                     className={`relative flex items-center gap-2 px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors ${
-                      isActive
-                        ? "text-primary"
-                        : "text-slate-500 hover:text-slate-800"
+                      isActive ? "text-primary" : "text-slate-500 hover:text-slate-800"
                     }`}
                   >
                     <t.icon className="h-4 w-4" />
@@ -78,9 +76,7 @@ export function Demo() {
                 >
                   {active === "analysis" && <AnalysisTab />}
                   {active === "fit" && <FitTab />}
-                  {active === "outreach" && (
-                    <OutreachTab copy={copy} copied={copied} />
-                  )}
+                  {active === "outreach" && <OutreachTab copy={copy} copied={copied} />}
                   {active === "resume" && <ResumeTab />}
                 </motion.div>
               </AnimatePresence>
@@ -149,8 +145,8 @@ function AnalysisTab() {
             Why this role
           </div>
           <p className="mt-1.5 text-sm text-slate-700 leading-relaxed">
-            The scope maps directly to what you led at your last two roles — greenfield
-            React/TS work with real ownership over infrastructure decisions.
+            The scope maps directly to what you led at your last two roles — greenfield React/TS
+            work with real ownership over infrastructure decisions.
           </p>
         </div>
       </div>
@@ -160,7 +156,15 @@ function AnalysisTab() {
 
 function FitTab() {
   const [target, setTarget] = useState(78);
-  const matched = ["TypeScript", "React", "Node.js", "AWS", "PostgreSQL", "System design", "REST APIs"];
+  const matched = [
+    "TypeScript",
+    "React",
+    "Node.js",
+    "AWS",
+    "PostgreSQL",
+    "System design",
+    "REST APIs",
+  ];
   const missing = ["GraphQL", "Kubernetes"];
   return (
     <div className="grid md:grid-cols-[auto_1fr] gap-8 items-start">
@@ -237,24 +241,22 @@ Alex`;
         </div>
         <ul className="mt-3 space-y-2.5 text-sm text-slate-700">
           <li className="flex gap-2">
-            <span className="text-primary">•</span> Migration led at Northwind mirrors
-            Acme's current infra push
+            <span className="text-primary">•</span> Migration led at Northwind mirrors Acme's
+            current infra push
           </li>
           <li className="flex gap-2">
-            <span className="text-primary">•</span> p95 latency wins prove the exact
-            tradeoffs the JD hints at
+            <span className="text-primary">•</span> p95 latency wins prove the exact tradeoffs the
+            JD hints at
           </li>
           <li className="flex gap-2">
-            <span className="text-primary">•</span> Cross-functional leadership
-            experience matches team scope
+            <span className="text-primary">•</span> Cross-functional leadership experience matches
+            team scope
           </li>
         </ul>
       </div>
       <div className="rounded-xl border border-slate-200 overflow-hidden">
         <div className="flex items-center justify-between px-4 py-2.5 border-b border-slate-100 bg-slate-50">
-          <div className="text-xs font-semibold text-slate-600">
-            Cold email · draft
-          </div>
+          <div className="text-xs font-semibold text-slate-600">Cold email · draft</div>
           <button
             onClick={() => copy(email)}
             className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-primary-hover transition-colors"
@@ -275,25 +277,19 @@ function ResumeTab() {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       <div className="rounded-xl border border-slate-200 p-5">
-        <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-          Before
-        </div>
+        <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">Before</div>
         <p className="mt-3 text-sm text-slate-700 leading-relaxed">
-          Worked on the frontend team to build new features and fix bugs across the
-          product.
+          Worked on the frontend team to build new features and fix bugs across the product.
         </p>
       </div>
       <div className="rounded-xl border-2 border-primary/30 bg-blue-50/40 p-5 relative">
         <div className="absolute -top-2.5 left-4 bg-primary text-white text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded">
           Suggested
         </div>
-        <div className="text-xs font-semibold uppercase tracking-wider text-primary">
-          After
-        </div>
+        <div className="text-xs font-semibold uppercase tracking-wider text-primary">After</div>
         <p className="mt-3 text-sm text-slate-800 leading-relaxed">
-          Led the redesign of 4 core React/TypeScript surfaces used by 120K+ weekly
-          users, shipping a componentized system that cut time-to-ship for new features
-          by 35%.
+          Led the redesign of 4 core React/TypeScript surfaces used by 120K+ weekly users, shipping
+          a componentized system that cut time-to-ship for new features by 35%.
         </p>
       </div>
       <div className="md:col-span-2 rounded-xl bg-slate-50 border border-slate-100 p-5">
@@ -301,8 +297,8 @@ function ResumeTab() {
           Why the rewrite works
         </div>
         <p className="mt-2 text-sm text-slate-700 leading-relaxed">
-          Anchored in quantifiable outcomes, name-drops the exact stack in the JD, and
-          signals ownership — three patterns Acme's engineering hiring bar looks for.
+          Anchored in quantifiable outcomes, name-drops the exact stack in the JD, and signals
+          ownership — three patterns Acme's engineering hiring bar looks for.
         </p>
       </div>
     </div>

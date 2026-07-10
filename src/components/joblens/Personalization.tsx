@@ -15,17 +15,15 @@ export function Personalization() {
             Upload your resume once. Every scan gets smarter.
           </h2>
           <p className="mt-5 text-slate-600 leading-relaxed">
-            Joblens keeps your background handy so every fit score, talking point, and
-            draft is grounded in your actual experience — not a generic template.
+            Joblens keeps your background handy so every fit score, talking point, and draft is
+            grounded in your actual experience — not a generic template.
           </p>
           <ul className="mt-6 space-y-2 text-sm text-slate-700">
             <li className="flex gap-2">
-              <span className="text-primary">✓</span> One-time setup, persistent
-              across every scan
+              <span className="text-primary">✓</span> One-time setup, persistent across every scan
             </li>
             <li className="flex gap-2">
-              <span className="text-primary">✓</span> Update anytime as your resume
-              evolves
+              <span className="text-primary">✓</span> Update anytime as your resume evolves
             </li>
             <li className="flex gap-2">
               <span className="text-primary">✓</span> Stored securely, never shared
@@ -41,28 +39,28 @@ export function Personalization() {
               </div>
               <div>
                 <div className="text-sm font-semibold text-slate-900">Alex Morgan</div>
-                <div className="text-xs text-slate-500">
-                  Senior Software Engineer · 7 yrs
-                </div>
+                <div className="text-xs text-slate-500">Senior Software Engineer · 7 yrs</div>
               </div>
             </div>
 
             <div className="mt-5 space-y-2">
-              {["TypeScript · React · Node.js", "AWS · PostgreSQL · Redis", "Team lead · Systems design"].map(
-                (row, i) => (
-                  <motion.div
-                    key={row}
-                    initial={{ opacity: 0, x: -10, width: "0%" }}
-                    whileInView={{ opacity: 1, x: 0, width: "100%" }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 + i * 0.15, duration: 0.5 }}
-                    className="flex items-center gap-2 rounded-lg bg-slate-50 border border-slate-100 px-3 py-2 text-xs text-slate-700"
-                  >
-                    <FileText className="h-3.5 w-3.5 text-slate-400" />
-                    {row}
-                  </motion.div>
-                ),
-              )}
+              {[
+                "TypeScript · React · Node.js",
+                "AWS · PostgreSQL · Redis",
+                "Team lead · Systems design",
+              ].map((row, i) => (
+                <motion.div
+                  key={row}
+                  initial={{ opacity: 0, x: -10, width: "0%" }}
+                  whileInView={{ opacity: 1, x: 0, width: "100%" }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 + i * 0.15, duration: 0.5 }}
+                  className="flex items-center gap-2 rounded-lg bg-slate-50 border border-slate-100 px-3 py-2 text-xs text-slate-700"
+                >
+                  <FileText className="h-3.5 w-3.5 text-slate-400" />
+                  {row}
+                </motion.div>
+              ))}
             </div>
 
             {/* connector */}

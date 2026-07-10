@@ -22,9 +22,7 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "backdrop-blur-lg bg-white/75 border-b border-slate-200/60"
-          : "bg-transparent"
+        scrolled ? "backdrop-blur-lg bg-white/75 border-b border-slate-200/60" : "bg-transparent"
       }`}
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between">
@@ -32,9 +30,7 @@ export function Navbar() {
           <div className="h-8 w-8 rounded-lg bg-primary grid place-items-center shadow-lift">
             <Search className="h-4 w-4 text-white" strokeWidth={2.75} />
           </div>
-          <span className="text-lg font-bold tracking-tight text-slate-900">
-            Joblens
-          </span>
+          <span className="text-lg font-bold tracking-tight text-slate-900">Joblens</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -51,7 +47,9 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm" target="_blank" rel="noopener noreferrer"
+            href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 rounded-lg bg-primary hover:bg-primary-hover text-white text-sm font-medium px-4 py-2 transition-all shadow-lift hover:scale-[1.02]"
           >
             Add to Chrome
@@ -80,7 +78,9 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm" target="_blank" rel="noopener noreferrer"
+              href="https://chromewebstore.google.com/detail/joblens/pjloihfekgljkeebmkkkefieadecpagm"
+              target="_blank"
+              rel="noopener noreferrer"
               className="sm:hidden mt-2 rounded-lg bg-primary text-white text-sm font-medium px-4 py-2.5 text-center"
             >
               Add to Chrome

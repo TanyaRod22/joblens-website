@@ -66,16 +66,11 @@ export function FitRing({
       </svg>
       <div className="absolute inset-0 grid place-items-center">
         <div className="text-center leading-none">
-          <div
-            className="font-bold text-slate-900 tabular-nums"
-            style={{ fontSize: size * 0.28 }}
-          >
+          <div className="font-bold text-slate-900 tabular-nums" style={{ fontSize: size * 0.28 }}>
             {display}
           </div>
           {size > 90 && (
-            <div className="text-[10px] uppercase tracking-widest text-slate-400 mt-1">
-              Fit
-            </div>
+            <div className="text-[10px] uppercase tracking-widest text-slate-400 mt-1">Fit</div>
           )}
         </div>
       </div>

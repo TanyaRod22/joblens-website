@@ -16,16 +16,10 @@ export function Footer() {
           <Link to="/privacy" className="hover:text-slate-900 transition-colors">
             Privacy Policy
           </Link>
-          <a
-            href="mailto:hello@joblens.app"
-            className="hover:text-slate-900 transition-colors"
-          >
+          <a href="mailto:hello@joblens.app" className="hover:text-slate-900 transition-colors">
             Contact
           </a>
-          <a
-            href="https://github.com"
-            className="hover:text-slate-900 transition-colors"
-          >
+          <a href="https://github.com" className="hover:text-slate-900 transition-colors">
             GitHub
           </a>
         </div>

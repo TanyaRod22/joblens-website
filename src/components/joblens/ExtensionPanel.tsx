@@ -62,8 +62,8 @@ export function ExtensionPanel({ score = 75 }: { score?: number }) {
           <div className="min-w-0">
             <div className="text-xs font-semibold text-slate-900">Resume fit</div>
             <p className="text-[11px] text-slate-600 leading-relaxed mt-0.5">
-              The candidate has a solid skill set and relevant experience but falls short in
-              years of experience and specific health product exposure.
+              The candidate has a solid skill set and relevant experience but falls short in years
+              of experience and specific health product exposure.
             </p>
           </div>
         </div>

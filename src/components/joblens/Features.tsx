@@ -1,11 +1,4 @@
-import {
-  Zap,
-  Target,
-  MessageSquareQuote,
-  Mail,
-  FileEdit,
-  HelpCircle,
-} from "lucide-react";
+import { Zap, Target, MessageSquareQuote, Mail, FileEdit, HelpCircle } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const features = [
@@ -22,7 +15,7 @@ const features = [
   {
     icon: MessageSquareQuote,
     title: "Personalized talking points",
-    desc: "\"Why this role\" and \"Why this company\" tailored to your background.",
+    desc: '"Why this role" and "Why this company" tailored to your background.',
   },
   {
     icon: Mail,
@@ -53,8 +46,8 @@ export function Features() {
             Everything you need before you hit apply
           </h2>
           <p className="mt-4 text-slate-600">
-            Six focused tools that replace the tab-switching between job boards,
-            ChatGPT, and Google Docs.
+            Six focused tools that replace the tab-switching between job boards, ChatGPT, and Google
+            Docs.
           </p>
         </Reveal>
 
@@ -65,9 +58,7 @@ export function Features() {
                 <div className="h-11 w-11 rounded-xl bg-blue-50 text-primary grid place-items-center group-hover:bg-primary group-hover:text-white transition-colors">
                   <f.icon className="h-5 w-5" />
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-slate-900">
-                  {f.title}
-                </h3>
+                <h3 className="mt-4 text-base font-semibold text-slate-900">{f.title}</h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">{f.desc}</p>
               </div>
             </Reveal>

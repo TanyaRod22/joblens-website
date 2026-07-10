@@ -36,9 +36,7 @@ export function Faq() {
     <section id="faq" className="py-24 bg-surface">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <Reveal className="text-center">
-          <div className="text-xs font-semibold uppercase tracking-widest text-primary">
-            FAQ
-          </div>
+          <div className="text-xs font-semibold uppercase tracking-widest text-primary">FAQ</div>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
             Frequently asked
           </h2>
@@ -53,9 +51,7 @@ export function Faq() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
                 >
-                  <span className="text-sm sm:text-base font-medium text-slate-900">
-                    {f.q}
-                  </span>
+                  <span className="text-sm sm:text-base font-medium text-slate-900">{f.q}</span>
                   <Plus
                     className={`h-4 w-4 text-slate-400 shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-45 text-primary" : ""
@@ -71,9 +67,7 @@ export function Faq() {
                       transition={{ duration: 0.25, ease: "easeOut" }}
                       className="overflow-hidden"
                     >
-                      <p className="px-5 pb-5 text-sm text-slate-600 leading-relaxed">
-                        {f.a}
-                      </p>
+                      <p className="px-5 pb-5 text-sm text-slate-600 leading-relaxed">{f.a}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>
